@@ -515,13 +515,7 @@ h6 {
 /*	04) DIZME HERO
 /*---------------------------------------------------*/
 
-.greenText {
-    color: #1cbe59 !important;
-}
 
-.purpleText {
-    color: #8067f0 !important;
-}
 
 .orangeText {
     color: #f75023 !important;
@@ -1094,8 +1088,8 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding-top: 50px;
-    margin-bottom: 165px;
+    padding-top: 75px;
+    margin-bottom: 80px;
     position: relative;
 }
 
@@ -1727,6 +1721,7 @@ h6 {
 .dizme_tm_skills .right {
     width: 50%;
     padding-left: 100px;
+    padding-top: 233px;
 }
 
 .dizme_tm_skills .right img {
@@ -2672,7 +2667,7 @@ h6 {
     height: auto;
     clear: both;
     float: left;
-    padding-top: 190px;
+    padding-top: 75px;
     margin-bottom: 200px;
     position: relative;
 }
@@ -3622,6 +3617,7 @@ input[type=number] {
     .dizme_tm_skills .right {
         padding-left: 0px;
         width: 100%;
+        padding-top: 0;
     }
     .dizme_tm_skills .right img {
         max-width: 300px;
@@ -3834,7 +3830,7 @@ input[type=number] {
         padding-top: 50px;
     }
     .dizme_tm_portfolio {
-        padding-top: 113px;
+        padding-top: 0px;
         margin-bottom: 88px;
     }
     .dizme_tm_portfolio .portfolio_filter {

@@ -10,14 +10,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Faiez Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/plugins.css" />
     <link rel="stylesheet" type="text/css" href="css/dark.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+    <style>
+        /* Gallery Container */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 0 20px 40px;
+        }
 
+        /* Gallery Item */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-container {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -50,8 +95,10 @@
                         <li class="current"><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999" target="_blank">figma</a></li>
-                        <li class="download_cv"><a href="img/cv/Faiez_Ahmed.pdf" download><span>Download CV</span></a></li>
+                        <li><a href="https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999"
+                                target="_blank">figma</a></li>
+                        <li class="download_cv"><a href="img/cv/Faiez_Ahmed.pdf" download><span>Download CV</span></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -69,9 +116,11 @@
                             <li class="current"><a href="#home">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999" target="_blank">figma</a></li>
+                            <li><a href="https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999"
+                                    target="_blank">figma</a></li>
                             <li><a href="#wordpress">WordPress</a></li>
-                            <li class="download_cv"><a href="img/cv/Faiez_Ahmed.pdf" download><span>Download CV</span></a>
+                            <li class="download_cv"><a href="img/cv/Faiez_Ahmed.pdf" download><span>Download
+                                        CV</span></a>
                             </li>
                         </ul>
                     </div>
@@ -93,9 +142,10 @@
                                 <h3>Faiez Ahmed</h3>
                             </div>
                             <div class="job">
-                                <p>A <span class="greenText">Creative UI/UX Designer and Frontend <br /> Developer From India</p>
+                                <p>A <span class="greenText">Creative UI/UX Designer and Frontend <br /> Developer From
+                                        India</p>
                             </div>
-                           
+
                             <div class="button">
                                 <div class="dizme_tm_button">
                                     <a class="anchor" href="#about"><span>About Me</span></a>
@@ -120,7 +170,7 @@
                                         src="img/svg/skills/boostrap.png" alt="" /></span>
                                 <span class="skills figma anim_moveBottom"><img class="svg"
                                         src="img/svg/skills/figma.svg" alt="" /></span>
-                                        
+
                             </div>
                         </div>
                     </div>
@@ -159,7 +209,9 @@
                                         <h3>Pixel Perfect</h3>
                                     </div>
                                     <div class="text">
-                                        <p>Pixel perfection is when the finished coded page and the design file are next to each other, you can not tell them apart. To quote Brandon Jones so precise.</p>
+                                        <p>Pixel perfection is when the finished coded page and the design file are next
+                                            to each other, you can not tell them apart. To quote Brandon Jones so
+                                            precise.</p>
                                     </div>
                                 </div>
                             </li>
@@ -176,7 +228,8 @@
                                     </div>
                                     <div class="text">
                                         <p>
-                                            When it comes to design, quality is everything. But, a quality website design is much more than aesthetic.It’s the usability. The expandabil.
+                                            When it comes to design, quality is everything. But, a quality website
+                                            design is much more than aesthetic.It’s the usability. The expandabil.
                                         </p>
                                     </div>
                                 </div>
@@ -193,7 +246,8 @@
                                         <h3>Awesome Idea</h3>
                                     </div>
                                     <div class="text">
-                                        <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                                        <p>Most common methods for designing websites that work well on desktop is
+                                            responsive and adaptive design</p>
                                     </div>
                                 </div>
                             </li>
@@ -213,13 +267,15 @@
                                 <img src="img/about/1.jpg" alt="" />
                                 <div class="numbers year">
                                     <div class="wrapper">
-                                        <h3><span class="dizme_tm_counter" data-from="0" data-to="3" data-speed="2000">0</span></h3>
+                                        <h3><span class="dizme_tm_counter" data-from="0" data-to="3"
+                                                data-speed="2000">0</span></h3>
                                         <span class="name">Years of<br />Success</span>
                                     </div>
                                 </div>
                                 <div class="numbers project">
                                     <div class="wrapper">
-                                        <h3><span class="dizme_tm_counter" data-from="0" data-to="10" data-speed="2000">0</span></h3>
+                                        <h3><span class="dizme_tm_counter" data-from="0" data-to="10"
+                                                data-speed="2000">0</span></h3>
                                         <span class="name">Total<br />Projects</span>
                                     </div>
                                 </div>
@@ -231,11 +287,17 @@
                                 <h3>I Can Design Anything You Want</h3>
                             </div>
                             <div class="text wow fadeInUp" data-wow-duration="1s">
-                                <p>Hello there! I'm a UI/UX Designer and Frontend Developer, and I'm very passionate and dedicated to my work. With more than 2 years experience as a professional UI/UX Designer and Frontend Developer, I have acquired the skills and knowledge necessary to make your project
-                                    a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+                                <p>Hello there! I'm a UI/UX Designer and Frontend Developer, and I'm very passionate and
+                                    dedicated to my work. With more than 2 years experience as a professional UI/UX
+                                    Designer and Frontend Developer, I have acquired the skills and knowledge necessary
+                                    to make your project
+                                    a success. I enjoy every step of the design process, from discussion and
+                                    collaboration.</p>
                             </div>
                             <div class="dizme_tm_button wow fadeInUp" data-wow-duration="1s">
-                                <a class="anchor" href="https://www.linkedin.com/in/faiez-ahmed-forntend-developer-ui-developer-web-developer-and-web-designer/"><span>Hire Me</span></a>
+                                <a class="anchor"
+                                    href="https://www.linkedin.com/in/faiez-ahmed-forntend-developer-ui-developer-web-developer-and-web-designer/"><span>Hire
+                                        Me</span></a>
                             </div>
                         </div>
                     </div>
@@ -253,16 +315,17 @@
                     <div class="dizme_tm_main_title" data-align="center">
                         <span>Portfolio</span>
                         <h3>Custom Website Work</h3>
-                        <p style="margin-bottom: 0rem;">Common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                        <p style="margin-bottom: 0rem;">Common methods for designing websites that work well on desktop
+                            is responsive and adaptive design</p>
                     </div>
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
                             <div style="margin-bottom: 90px;">
-                           
+
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="https://corekees.com/en/" target="_blank">
-                                            <div >
+                                            <div>
 
                                                 <img src="img/portfolio/corekees.png" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/corekees.png"></div>
@@ -274,11 +337,11 @@
                                         </a>
                                     </div>
                                 </li>
-                              
+
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="https://www.green.earth/" target="_blank">
-                                            <div >
+                                            <div>
 
                                                 <img src="img/portfolio/Dgb.png" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/Dgb.png"></div>
@@ -314,7 +377,8 @@
                 </div>
                 <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="img/brushes/portfolio/1.png" alt="" />
                 </div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png" alt="" /></div>
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png"
+                        alt="" /></div>
             </div>
         </div>
         <div class="dizme_tm_section" id="portfolio">
@@ -323,9 +387,28 @@
                     <div class="dizme_tm_main_title" data-align="center">
                         <span>Portfolio</span>
                         <h3>My Protype Works</h3>
-                        </div>
+                    </div>
+                    <section class="gallery">
+                        <h2>My Gallery</h2>
+                        <div class="gallery-container">
+                            <div class="gallery-item"><img src="img/portfolio/5.png" alt="Gallery Image 1">
+                            </div>
+                            <div class="gallery-item"><img src="img/portfolio/1.png" alt="Gallery Image 2">
+                            </div>
+                            <div class="gallery-item"><img src="img/portfolio/2.png" alt="Gallery Image 3">
+                            </div>
+                            <div class="gallery-item"><img src="img/portfolio/3.png" alt="Gallery Image 4">
+                            </div>
 
-                    <div class="dizme_tm_portfolio_titles"></div>
+
+                        </div>
+                        <div class="dizme_tm_button wow fadeInUp" data-wow-duration="1s" style="text-align: center;">
+                            <a class="anchor"
+                                href="https://www.figma.com/files/team/959691332307341222/recents-and-sharing?fuid=959691329124090999"><span>View
+                                    More</span></a>
+                        </div>
+                    </section>
+                    <!-- <div class="dizme_tm_portfolio_titles"></div>
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
                             <li class="youtube grid-item">
@@ -440,11 +523,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="img/brushes/portfolio/1.png" alt="" />
                 </div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png" alt="" /></div>
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png"
+                        alt="" /></div>
             </div>
         </div>
 
@@ -455,7 +539,8 @@
                     <div class="dizme_tm_main_title" data-align="center">
                         <span>Portfolio</span>
                         <h3>My Amazing WordPress Works</h3>
-                        <p style="margin-bottom: 0rem;">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                        <p style="margin-bottom: 0rem;">Most common methods for designing websites that work well on
+                            desktop is responsive and adaptive design</p>
                     </div>
                     <div class="portfolio_list wow fadeInUp" data-wow-duration="1s">
                         <ul class="gallery_zoom grid">
@@ -463,7 +548,8 @@
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="http://seamount.co/" target="_blank">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/groundstaff.PNG" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/groundstaff.PNG"></div>
@@ -479,10 +565,12 @@
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="http://beachweddinggoa.com/" target="_blank">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/beachweddinggoa.PNG" alt="" />
-                                                <div class="main" data-img-url="img/portfolio/beachweddinggoa.PNG"></div>
+                                                <div class="main" data-img-url="img/portfolio/beachweddinggoa.PNG">
+                                                </div>
 
                                             </div>
                                             <div class="mobile_title">
@@ -494,7 +582,8 @@
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="http://alokikhospital.com/" target="_blank">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/alokik.PNG" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/alokik.PNG"></div>
@@ -508,8 +597,9 @@
                                 </li>
                                 <li class="youtube grid-item">
                                     <div class="inner">
-                                        <a href="https://slhospital.in/" target="_blank" >
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                        <a href="https://slhospital.in/" target="_blank">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/sl.png" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/sl.png"></div>
@@ -524,7 +614,8 @@
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="https://ecotourismudaipur.com/" target="_blank">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/ecotourism.png" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/ecotourism.png"></div>
@@ -539,7 +630,8 @@
                                 <li class="youtube grid-item">
                                     <div class="inner">
                                         <a href="#" target="_blank">
-                                            <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape" data-category="Youtube">
+                                            <div class="entry dizme_tm_portfolio_animation_wrap"
+                                                data-title="Mockup Shape" data-category="Youtube">
 
                                                 <img src="img/portfolio/udaipurevent.PNG" alt="" />
                                                 <div class="main" data-img-url="img/portfolio/udaipurevent.PNG"></div>
@@ -560,11 +652,12 @@
                 </div>
                 <div class="brush_1 wow zoomIn" data-wow-duration="1s"><img src="img/brushes/portfolio/1.png" alt="" />
                 </div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png" alt="" /></div>
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/portfolio/2.png"
+                        alt="" /></div>
             </div>
         </div>
 
-      
+
 
 
 
@@ -576,7 +669,8 @@
                             <div class="dizme_tm_main_title wow fadeInUp" data-wow-duration="1s" data-align="left">
                                 <span>Design is Life</span>
                                 <h3>I Develop Skills Regularly to Keep Me Update</h3>
-                                <p>Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                                <p>Most common methods for designing websites that work well on desktop is responsive
+                                    and adaptive design</p>
                             </div>
                             <div class="dodo_progress wow fadeInUp" data-wow-duration="1s">
                                 <div class="progress_inner" data-value="85" data-color="#f75023">
@@ -638,7 +732,7 @@
                                         </div>
                                     </div>
                                 </div>
-                          
+
                             </div>
                         </div>
                         <div class="right">
@@ -650,120 +744,124 @@
         </div>
 
 
-     
+
+    </div>
+    </div>
+
+
+    <div class="dizme_tm_contact">
+        <div class="container">
+            <div class="dizme_tm_main_title" data-align="center">
+                <span>Contact Me</span>
+                <h3>I Want To Hear From You</h3>
             </div>
-        </div> 
-
-      
-             <div class="dizme_tm_contact">
-                <div class="container">
-                    <div class="dizme_tm_main_title" data-align="center">
-                        <span>Contact Me</span>
-                        <h3>I Want To Hear From You</h3>
-                        </div>
-                    <div class="contact_inner">
-                        <div class="left wow fadeInLeft" data-wow-duration="1s">
-                            <ul>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon orangeBackground">
-                                            <i class="fa fa-map-marker orangeText"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Address</h3>
-                                            <span>Aayad, Udaipur Rajasthan
-                                                        </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon greenBackground">
-                                            <i class="fa fa-envelope greenText"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Email</h3>
-                                            <span><a href="#"><span class="__cf_email__"
-                                                                    data-cfemail="d7bfb2bbbbb897b3beadbab2f9b4b8ba">faiezahmed844@gmail.com</span></a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon purpleBackground">
-                                            <i class="fa fa-phone purpleText"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Phone</h3>
-                                            <span>+91 9166468807</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right wow fadeInRight" data-wow-duration="1s">
-                            <div class="fields">
-                                <div class="gmap_canvas">
-
-                                    <iframe width="100%" height="375" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.8589886879117!2d73.72056017507295!3d24.594062255866188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e594ea500f2b%3A0x4fd66fd3787dc438!2zQmlsYWxpIE1hc2ppZCDZhdiz2KzYrw!5e0!3m2!1sen!2sin!4v1709470389828!5m2!1sen!2sin" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                    <a href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br>
-                                    <style>
-                                        .mapouter {
-                                            position: relative;
-                                            text-align: right;
-                                            height: 375px;
-                                            width: 100%;
-                                        }
-                                    </style><a href="https://www.embedgooglemap.net">how to add google map</a>
-                                    <style>
-                                        .gmap_canvas {
-                                            overflow: hidden;
-                                            background: none !important;
-                                            height: 375px;
-                                            width: 100%;
-                                        }
-                                    </style>
+            <div class="contact_inner">
+                <div class="left wow fadeInLeft" data-wow-duration="1s">
+                    <ul>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon orangeBackground">
+                                    <i class="fa fa-map-marker orangeText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Address</h3>
+                                    <span>Aayad, Udaipur Rajasthan
+                                    </span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/contact/2.png" alt="" /></div>
-                   
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon greenBackground">
+                                    <i class="fa fa-envelope greenText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Email</h3>
+                                    <span><a href="#"><span class="__cf_email__"
+                                                data-cfemail="d7bfb2bbbbb897b3beadbab2f9b4b8ba">faiezahmed844@gmail.com</span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list_inner">
+                                <div class="icon purpleBackground">
+                                    <i class="fa fa-phone purpleText"></i>
+                                </div>
+                                <div class="short">
+                                    <h3>Phone</h3>
+                                    <span>+91 9166468807</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right wow fadeInRight" data-wow-duration="1s">
+                    <div class="fields">
+                        <div class="gmap_canvas">
 
+                            <iframe width="100%" height="375" id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.8589886879117!2d73.72056017507295!3d24.594062255866188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e594ea500f2b%3A0x4fd66fd3787dc438!2zQmlsYWxpIE1hc2ppZCDZhdiz2KzYrw!5e0!3m2!1sen!2sin!4v1709470389828!5m2!1sen!2sin"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a
+                                href="https://www.embedgooglemap.net/blog/divi-discount-code-elegant-themes-coupon"></a><br>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    height: 375px;
+                                    width: 100%;
+                                }
+                            </style><a href="https://www.embedgooglemap.net">how to add google map</a>
+                            <style>
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    height: 375px;
+                                    width: 100%;
+                                }
+                            </style>
+                        </div>
                     </div>
                 </div>
-                <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/contact/1.png" alt="" /></div>
-            </div> -->
-        </div> 
+                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"><img src="img/brushes/contact/2.png"
+                        alt="" /></div>
 
 
-        <div class="dizme_tm_section">
-            <div class="dizme_tm_copyright">
-                <div class="container">
-                    <div class="inner">
-                        <div class="left wow fadeInLeft" data-wow-duration="1s">
-                            <p>Developed with love by Myself
-                        </div>
-                        <div class="right wow fadeInRight" data-wow-duration="1s">
-                            <ul>
-                                <li><a href="#">Terms &amp; Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
+            </div>
+        </div>
+        <div class="brush_1 wow fadeInLeft" data-wow-duration="1s"><img src="img/brushes/contact/1.png" alt="" /></div>
+    </div> -->
+    </div>
+
+
+    <div class="dizme_tm_section">
+        <div class="dizme_tm_copyright">
+            <div class="container">
+                <div class="inner">
+                    <div class="left wow fadeInLeft" data-wow-duration="1s">
+                        <p>Developed with love by Myself
+                    </div>
+                    <div class="right wow fadeInRight" data-wow-duration="1s">
+                        <ul>
+                            <li><a href="#">Terms &amp; Condition</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div class="mouse-cursor cursor-outer"></div>
-        <div class="mouse-cursor cursor-inner"></div>
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
 
-        <div class="progressbar">
-            <a href="#"><span class="text">To Top</span></a>
-            <span class="line"></span>
-        </div>
+    <div class="progressbar">
+        <a href="#"><span class="text">To Top</span></a>
+        <span class="line"></span>
+    </div>
 
     </div>
 
